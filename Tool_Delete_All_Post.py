@@ -7,8 +7,8 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 #modify
-username = "username"
-password = "password"
+username = "robot104"
+password = "matkhau9911176"
 
 
 #Other function
@@ -55,7 +55,8 @@ def delete_post(opener):
    "deletepost" : "delete",
    "do" : "deletepost",
    "p" : p,
-   "reason" : "Tool Delete All Post at https://github.com/kuqadk3/ALL-VOZ-TOOL/blob/master/Tool_Delete_All_Post.py",
+   #"reason" : "Tool Delete All Post at https://github.com/kuqadk3/ALL-VOZ-TOOL/blob/master/Tool_Delete_All_Post.py",
+   "reason" : "Delete....",
    "s" : "",
    "securitytoken" : securitytoken,
    "url" : ("https://vozforums.com/showthread.php?p=" + p)
@@ -63,7 +64,8 @@ def delete_post(opener):
   edit_thread_data = {
    "do" : "updatepost",
    "emailupdate" : "9999",
-   "message" : "Tool Delete All Post at [url]https://github.com/kuqadk3/ALL-VOZ-TOOL/blob/master/Tool_Delete_All_Post.py[/url]",
+   #"message" : "Tool Delete All Post at [url]https://github.com/kuqadk3/ALL-VOZ-TOOL/blob/master/Tool_Delete_All_Post.py[/url]",
+   "message" : "Delete....",
    "p" : p, #get only ID
    "parseurl" : "1",
    "reason" : "",
@@ -105,4 +107,3 @@ def login(username, password):
 #MAIN
 opener = login(username, password) #cookie for login
 delete_post(opener)
-
