@@ -3,6 +3,8 @@ from BeautifulSoup import BeautifulSoup
 import re
 import time
 import requests
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 #modify
 username = "username"
